@@ -35,7 +35,7 @@ emprouter.post("/",function(request, response){
     let ename = request.body.Name;
     let eddress = request.body.Address; 
     
-    let query = `insert into emp values(${eno}, '${ename}', '${eddress}')`;
+    let query = `insert into emp1 values(${eno}, '${ename}', '${eddress}')`;
     console.log(query);
 
     connection.query(query, function(err, result){
